@@ -23,7 +23,7 @@ const _removeTokenToDestroy = (token) => {
 
 const _logout = Accounts.logout;
 Accounts.logout = function() {
-    debugger;
+
     // logout normally if connected
     if ( Meteor.connection.status().connected ) {
         _logout.call(Accounts);
